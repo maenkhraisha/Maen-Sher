@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title id="title">Survey Form</title>
+    <title>
+        Survey Form
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700&display=swap" rel="stylesheet">
@@ -16,15 +18,15 @@
     <form id="survey-form">
         <div>
             <label id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter The Name Please">
+            <input type="text" id="name" placeholder="Enter The Name Please" required>
         </div>
         <div>
             <label id="email-label">Email</label>
-            <input type="email" id="email" placeholder="Enter The Email Please">
+            <input type="email" id="email" placeholder="Enter The Email Please" required>
         </div>
         <div>
-            <label id="number-label">age</label>
-            <input type="number" id="number" min="10" max="99" placeholder="Enter The Age Please">
+            <label id="number-label">Age</label>
+            <input type="number" id="number" min="10" max="99" placeholder="Enter The Age Please" required>
         </div>
 
         <!-- SELECT BUTTONS -->
@@ -39,13 +41,13 @@
         <!-- RADIO BUTTONS -->
         <section>
             <p>Would you like to recomment freeCodeCamp to a friend</p>
-            <input type="radio" name="definitely-maybe-notsure">
+            <input type="radio" name="recomment" value="definitely">
             <label for="definitely">Definitely</label>
             <br>
-            <input type="radio" name="definitely-maybe-notsure">
+            <input type="radio" name="recomment" value="maybe">
             <label for="maybe">Maybe</label>
             <br>
-            <input type="radio" name="definitely-maybe-notsure">
+            <input type="radio" name="recomment" value="not_sure">
             <label for="not_sure">Not Sure</label>
         </section>
         <p>What is you favourite feature of freeCodeCamp</p>
